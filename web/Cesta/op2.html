@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Envío a domicilio</title>
+    <link rel="stylesheet" href="/CSS/catalogo.css">
+</head>
+<body>
+    <div>
+        <!--Parte de arriba-->
+        <div>
+            <div>Datos de envío</div>
+            <!--Nombre completo-->
+            <div>
+                <input type="text" placeholder="Nombre" id="nombre" required>
+                <input type="text" placeholder="Apellido" id="apellido" required>
+            </div>
+            <!--Contacto-->
+            <div>
+                <input type="tel" id="numTel" pattern="[6-7][0-9]{8}" placeholder="Número de teléfono" required>
+                <input type="email" name="email" id="email" placeholder="nano@gmail.com" required>
+            </div>
+            <!--Ubicación-->
+            <div>
+                <input type="text" name="direccion" id="direccion" required placeholder="Dirección">
+                <input type="text" name="codPostal" id="codPostal" pattern="[0-9]{5}" placeholder="Código Postal">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                <input type="text" name="provincia" id="provincia" placeholder="Provincia">
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">
+                    He podido leer y entiendo la información sobre el uso de mis datos 
+                    personales explicada en la política de pivacidad
+                </label>
+            </div>
+        </div>
+
+        <!--Parte de abajo, cesta-->
+        <div>
+            articulos en la cesta
+        </div>
+    </div>
+</body>
