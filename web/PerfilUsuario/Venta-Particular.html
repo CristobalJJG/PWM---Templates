@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Introducir una venta</title>
+</head>
+<header>
+    <div class="header">
+        <div>Nombre</div>
+        <a href="/web/PerfilUsuario/Inicio.html">Inicio</a>
+        <a href="/web/PerfilUsuario/Ventas.html">Ventas</a>
+        <a href="/web/PerfilUsuario/Compras.html">Compras</a>
+    </div>
+</header>
+<body>
+    <!--Fondo gris-->
+    <div>
+        <form action="">
+            <div>
+                <div>Nombre del objeto</div>
+                <input type="text" placeholder="Maceta">
+            </div>
+            <div>
+                <p>Descripción</p>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            </div><br/>
+            <div>
+                <p>Ubicación</p>
+                <div style="background-color: grey; width: 250px; height: 150px;" id="ubicacion">
+                    mapa
+                </div>
+            </div><br/>
+            <div>
+                <p>Costo</p><input type="number" id="costo">
+                <p>Más datos</p><input type="text" id="Más datos">
+                <p>Más datos</p><input type="text" id="Más datos2">
+                <p>Etiqueta</p>
+                <select name="etiqueta" id="etiqueta">
+                    <option value="1">Categoría 1</option>
+                    <option value="2">Categoría 2</option>
+                    <option value="3">Categoría 3</option>
+                    <option value="4">Categoría 4</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

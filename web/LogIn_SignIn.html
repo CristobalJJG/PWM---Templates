@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
@@ -17,17 +18,17 @@
                         INICIA SESIÓN
                     </div>
                     <form action="">
-                        <input type="text" placeholder="Dirección de e-mail"/>
-                        <input type="text" placeholder="Contraseña"/>
+                        <input type="text" id="logInEmail" placeholder="Dirección de e-mail"/>
+                        <input type="text" id="logInPass" placeholder="Contraseña"/>
                     </form>
                     <!--Cuadrado con los logos-->
                     <div>
-                        <a><img src="/img/Logos/gmail.png" width="160" height="100"></a>
-                        <a><img src="/img/Logos/facebook.png" width="100" height="100"></a>
+                        <a id="regGoogle"><img src="/img/Logos/gmail.png" width="160" height="100"></a>
+                        <a id="regFacebook"><img src="/img/Logos/facebook.png" width="100" height="100"></a>
                     </div>
                     <div>
-                        <a><img src="/img/Logos/apple.png" width="100" height="100"></a>
-                        <a><img src="/img/Logos/twitter.png" width="100" height="100"></a>
+                        <a id="regApple"><img src="/img/Logos/apple.png" width="100" height="100"></a>
+                        <a id="regTwitter"><img src="/img/Logos/twitter.png" width="100" height="100"></a>
                    
                     </div>
                 </div>
@@ -40,15 +41,15 @@
                         REGISTRARSE
                     </div>
                     <form>
-                        <input type="text" placeholder="Dirección de e-mail"/>
-                        <input type="text" placeholder="Contraseña"/>
+                        <input type="text" id="signInEmail" placeholder="Dirección de e-mail"/>
+                        <input type="text" id="signInPass" placeholder="Contraseña"/>
                     </form>
                 </div>
 
                 <!--Botón para acceder-->
                 <div>
                     <form></form>
-                    <input type="submit" value="Enviar"/>
+                    <input type="submit" id="btnEnter" value="Enviar"/>
                 </div>
             </div>
 
@@ -56,3 +57,4 @@
         </div>
     </div>
 </body>
+</html>
