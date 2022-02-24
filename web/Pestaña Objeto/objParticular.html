@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Catálogo</title>
+    <title id="ObjName"></title>
     <link rel="stylesheet" href="/CSS/catalogo.css">
 </head>
 <body>
+    <div>
+        <!--Div imagen-->
+        <div>
+            <img src="/img/catalogo/img_prueba.webp" id="idImg1" width="450" height="600"/>
+        </div>
+
+        <!--Div información-->
+        <div>
+            <!--Nombres e ids-->
+            <div>
+                <p id="objName">Nombre del objeto</p>
+                ID: <p id="idImg1">1</p>
+                <p id="propietario">Cristóbal José Jiménez Gómez</p>
+            </div>
+
+            <!--Descripción del artículo-->
+            <div>
+                <textarea name="descripcion" id="img1_desc" cols="150" rows="8">Descipción del artículo</textarea>
+            </div>
+
+            <!--Tallas y fav-->
+            <div>
+                <p>Ubicación</p>
+                <div style="background-color: grey; width: 1130px; height: 150px;" id="userUbicacion">
+                    mapa
+                </div>
+            </div>
+            
+            <!--Añadir al carrito con las opciones seleccionadas-->
+            <div>
+                <input type="button" id="addCarrito" value="Añadir al carrito">
+                <p>Fav</p>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
