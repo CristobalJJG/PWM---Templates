@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title id="ObjName">Nombre del objeto</title>
     <link rel="stylesheet" href="/CSS/catalogo.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
 </head>
+<header>
+    <div class="c-fondo">
+        <!--Nombre de la tienda-->
+        <div class="nombre">Nombre</div>
+
+        <!--Parte del usuario-->
+        <div>
+            <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
+            <p id="nombreUser" class="userName">Nombre de usuario</p>
+        </div>
+
+        <!--Separación-->
+        <sep class="sep"></sep>
+
+        <!--Carrito-->
+        <div>
+            <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+            <p class="c-nombre">Carrito</p>
+        </div>
+    </div>
+</header>
+
 <body>
     <div>
         <!--Div imagen-->
-        <div>
-            <img src="/img/catalogo/img_prueba.webp" id="idImg1" width="450" height="600"/>
+        <div class="izq">
+            <img src="/img/catalogo/img_prueba.webp" id="idImg1" width="450" height="600" />
         </div>
 
         <!--Div información-->
-        <div>
+        <div class="der">
             <!--Nombres e ids-->
             <div>
                 <p id="objName">Nombre del objeto</p>
-                ID: <p id="idImg1">1</p>
+                ID:
+                <p id="idImg1">1</p>
                 <p id="propietario">Cristóbal José Jiménez Gómez</p>
             </div>
 
@@ -32,7 +58,7 @@
                     mapa
                 </div>
             </div>
-            
+
             <!--Añadir al carrito con las opciones seleccionadas-->
             <div>
                 <input type="button" id="addCarrito" value="Añadir al carrito">
@@ -40,6 +66,12 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+<footer>
+    <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+        <br/> Copyrigth@Aitana&Cristóbal
+        <br/> Esta página web está aprobadisima.</p>
+</footer>
+
 </html>

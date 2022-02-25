@@ -4,7 +4,7 @@ body {
     background-color: #f2f2f2;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .padre {
@@ -47,4 +47,12 @@ body {
 
 .f1 {
     top: 125px;
+}
+
+.izq {
+    float: left;
+}
+
+.der {
+    float: right;
 }
