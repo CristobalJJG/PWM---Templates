@@ -1,0 +1,93 @@
+/*General*/
+
+body {
+    background-color: #555;
+    width: 100%;
+    height: 100%;
+}
+
+.recuadro {
+    background-color: #ddd;
+    border: 1 solid #222;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -300px;
+}
+
+.cabecera {
+    background-color: #c4c4c4;
+    padding: 2px 0 2px 20px;
+    margin: 0;
+}
+
+.t-cabecera {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+
+/*Tiendas*/
+
+.tiendas {
+    position: absolute;
+    left: 0;
+}
+
+ul {
+    padding: 10px;
+}
+
+.tienda {
+    list-style: none;
+    background-color: #bbb;
+    width: 100px;
+    height: 15px;
+    padding: 5px;
+    margin: 2px;
+}
+
+
+/*Mapa*/
+
+.mapa {
+    background-color: #222;
+    float: right;
+    width: 60%;
+    height: calc(100% - 58px);
+}
+
+.t-mapa {
+    font-size: 30px;
+    color: #ddd;
+    text-align: center;
+}
+
+
+/*inputs sitios*/
+
+.inp-txt {
+    position: relative;
+    width: 250px;
+    margin: 25px 10px 0 10px;
+    left: 5px;
+    text-align: center;
+    background-color: #ddd;
+    border: 0;
+    border-bottom: 2px solid #222;
+}
+
+::placeholder {
+    color: #444;
+}
+
+
+/*Politica de privacidad*/
+
+.pp {
+    margin: 20px 20px 0 20px;
+    text-align: center;
+}
