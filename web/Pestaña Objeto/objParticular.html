@@ -8,71 +8,73 @@
     <link rel="stylesheet" href="/CSS/header_footer/footer.css">
     <link rel="stylesheet" href="/CSS/header_footer/header.css">
 </head>
-<header>
-    <div class="c-fondo">
-        <!--Nombre de la tienda-->
-        <div class="nombre">Nombre</div>
-
-        <!--Parte del usuario-->
-        <div>
-            <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
-            <p id="nombreUser" class="userName">Nombre de usuario</p>
-        </div>
-
-        <!--Separación-->
-        <sep class="sep"></sep>
-
-        <!--Carrito-->
-        <div>
-            <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
-            <p class="c-nombre">Carrito</p>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">Nombre</div>
+    
+            <!--Parte del usuario-->
+            <div>
+                <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
+                <p id="nombreUser" class="userName">Nombre de usuario</p>
+            </div>
+    
+            <!--Separación-->
+            <sep class="sep"></sep>
+    
+            <!--Carrito-->
+            <div>
+                <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                <p class="c-nombre">Carrito</p>
+            </div>
+        </div>
+    </header>
     <div>
         <!--Div imagen-->
         <div class="izq">
-            <img src="/img/catalogo/img_prueba.webp" id="idImg1" width="450" height="600" />
+            <img src="/img/catalogo/img_prueba.webp" class="img" id="idImg1" width="450" height="600" />
         </div>
 
         <!--Div información-->
-        <div class="der">
+        <div class="der recuadro">
             <!--Nombres e ids-->
             <div class="izq">
-                <p id="objName">Nombre del objeto</p>
-                ID:
-                <p id="idImg1">1</p>
-                <p id="propietario">Cristóbal José Jiménez Gómez</p>
+                <div><p id="objName">Nombre del objeto</p></div>
+                <div><h3 id="precio">50€</h3></div>
+                <div><p id="propietario">Cristóbal José Jiménez Gómez</p></div>
             </div>
 
             <!--Descripción del artículo-->
             <div>
-                <textarea name="descripcion" id="img1_desc" cols="150" rows="8">Descipción del artículo</textarea>
+                <textarea name="descripcion" id="img1_desc" cols="125" rows="8">Descripción del artículo</textarea>
             </div>
 
             <!--Tallas y fav-->
             <div>
                 <p>Ubicación</p>
-                <div style="background-color: grey; width: 1130px; height: 150px;" id="userUbicacion">
+                <div style="background-color: grey; width: 938px; height: 150px;" id="userUbicacion">
                     mapa
                 </div>
             </div>
-
+            <br/>
             <!--Añadir al carrito con las opciones seleccionadas-->
             <div>
-                <input type="button" id="addCarrito" value="Añadir al carrito">
-                <p>Fav</p>
+                <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
+                <br/><br/>
+                <button id="addFavourite" onclick="addFavourite">
+                    <span id="fav"></span>
+                </button>
             </div>
         </div>
     </div>
-
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
 </body>
-<footer>
-    <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
-        <br/> Copyrigth@Aitana&Cristóbal
-        <br/> Esta página web está aprobadisima.</p>
-</footer>
+
 
 </html>

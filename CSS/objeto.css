@@ -4,7 +4,7 @@ body {
 }
 
 img.img {
-    margin: 25px 25px;
+    margin: 25px 125px;
     border-radius: 10px;
     width: 450px;
     height: 600px;
@@ -19,8 +19,12 @@ img.img {
     padding-left: 25px;
 }
 
+textarea{
+    font-family:Roboto, sans-serif;
+}
+
 #objName {
-    margin-bottom: 0;
+    margin-bottom: 2;
 }
 
 #precio {
@@ -39,6 +43,7 @@ img.img {
     height: 75px;
     transition: 200ms;
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 .opcion:hover {
@@ -49,4 +54,14 @@ img.img {
 .flex {
     display: flex;
     margin: 10px 0 50px 0;
+}
+
+button{    
+    width: 50px;
+    height: 50px;
+}
+
+button #fav{
+    background-image: url('https://brandflow.net/assets/img/featured/mdb-prolog.jpg') !important;
+    background-size: contain;
 }
