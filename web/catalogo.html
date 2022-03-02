@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Catálogo</title>
     <link rel="stylesheet" href="/CSS/catalogo.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
 </head>
 <!--Insertar cabecera-->
+
 <body>
-    <!--Ubicacion de cada foto-->
-    <div class="padre">
-            <img class="imagen" src="/img/catalogo/img_prueba.webp" id="idImg1" alt="Persona1"/>
-            <img class="imagen" src="/img/catalogo/Img_pruebas1.jpg" id="idImg2" alt="Persona2"/>
-            <img class="imagen" src="/img/catalogo/img_prueba2.jpg" id="idImg3" alt="Persona3"/>
-            <img class="rect" id="idImg4"/>
-            <img class="rect" id="idImg5"/>
-    </div>
-    <div class="padre">
-        <img class="rect" id="idImg6"/>
-        <img class="rect" id="idImg7"/>
-        <img class="rect" id="idImg8"/>
-        <img class="rect" id="idImg9"/>
-        <img class="rect" id="idImg10"/>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">Nombre</div>
+
+            <!--Parte del usuario-->
+            <div>
+                <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
+                <p id="nombreUser" class="userName">Nombre de usuario</p>
+            </div>
+
+            <!--Separación-->
+            <sep class="sep"></sep>
+
+            <!--Carrito-->
+            <div>
+                <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                <p class="c-nombre">Carrito</p>
+            </div>
+        </div>
+    </header>
+    <div class="pad">
+        <!--Ubicacion de cada foto-->
+        <div class="padre">
+            <img class="imagen" src="/img/catalogo/img_prueba.webp" id="idImg1" alt="Persona1" />
+            <img class="imagen" src="/img/catalogo/Img_pruebas1.jpg" id="idImg2" alt="Persona2" />
+            <img class="imagen" src="/img/catalogo/img_prueba2.jpg" id="idImg3" alt="Persona3" />
+            <img class="rect" id="idImg4" />
+            <img class="rect" id="idImg5" />
+        </div>
+        <div class="padre">
+            <img class="rect" id="idImg6" />
+            <img class="rect" id="idImg7" />
+            <img class="rect" id="idImg8" />
+            <img class="rect" id="idImg9" />
+            <img class="rect" id="idImg10" />
+        </div>
     </div>
 
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
 </body>
+
 </html>
 <!--Insertar pie de página-->

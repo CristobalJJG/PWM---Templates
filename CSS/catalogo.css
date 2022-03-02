@@ -12,47 +12,31 @@ body {
     margin: 50px;
 }
 
+.pad {
+    padding: 25px;
+}
+
 .imagen {
     width: 225px;
     height: 300px;
     border-radius: 5px;
+    transition: 200ms;
 }
 
 .rect {
-    background-color: brown;
+    background-color: #666;
     width: 225px;
     height: 300px;
     border-radius: 5px;
+    transition: 200ms;
 }
 
-.c1 {
-    left: 89px;
+.imagen:hover {
+    width: 250px;
+    height: 325px;
 }
 
-.c2 {
-    left: 388px;
-}
-
-.c3 {
-    left: 687px;
-}
-
-.c4 {
-    left: 986px;
-}
-
-.c5 {
-    left: 1285px;
-}
-
-.f1 {
-    top: 125px;
-}
-
-.izq {
-    float: left;
-}
-
-.der {
-    float: right;
+.rect:hover {
+    width: 250px;
+    height: 325px;
 }

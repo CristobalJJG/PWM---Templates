@@ -1,12 +1,11 @@
 footer {
     background-color: #b6b6b6;
-    position: absolute;
-    text-align: center;
+    position: unset;
     width: 100%;
+    height: 65px;
     bottom: 0;
-    padding: 0;
-    margin: 0;
-    font-size: x-small;
+    font-size: smaller;
+    float: left;
 }
 
 #footer {

@@ -39,6 +39,7 @@
     margin: 7px 0 0 0px;
     right: 5px;
     float: right;
+    transition: 200ms;
 }
 
 .foto-c {

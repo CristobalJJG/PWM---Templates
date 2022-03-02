@@ -3,61 +3,75 @@
 
 <head>
     <title id="ObjName"></title>
-    <link rel="stylesheet" href="/CSS/catalogo.css">
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/objeto.css">
     <link rel="stylesheet" href="/CSS/header_footer/footer.css">
     <link rel="stylesheet" href="/CSS/header_footer/header.css">
 </head>
-<header>
-    <div class="c-fondo">
-        <!--Nombre de la tienda-->
-        <div class="nombre">Nombre</div>
-
-        <!--Parte del usuario-->
-        <div>
-            <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
-            <p id="nombreUser" class="userName">Nombre de usuario</p>
-        </div>
-
-        <!--Separación-->
-        <sep class="sep"></sep>
-
-        <!--Carrito-->
-        <div>
-            <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
-            <p class="c-nombre">Carrito</p>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">Nombre</div>
+
+            <!--Parte del usuario-->
+            <div>
+                <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
+                <p id="nombreUser" class="userName">Nombre de usuario</p>
+            </div>
+
+            <!--Separación-->
+            <sep class="sep"></sep>
+
+            <!--Carrito-->
+            <div>
+                <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                <p class="c-nombre">Carrito</p>
+            </div>
+        </div>
+    </header>
     <div>
         <!--Div imagen-->
-        <div class="izq">
-            <img src="/img/Objeto/Img_pruebas1.jpg" id="idImg3" width="450" height="600" />
+        <div class="izq img">
+            <img src="/img/Objeto/Img_pruebas1.jpg" class="img" id="idImg3" />
         </div>
 
         <!--Div información-->
-        <div class="der">
-            <!--Nombres e ids-->
+        <div class="der recuadro">
+            <!--Info-->
             <div>
-                <p id="objName">Nombre del objeto</p>
-                ID:
-                <p id="idImg3">3</p>
+                <h2 id="objName">Chaqueta</h2>
+                <div>
+                    <h3 id="precio">50€</h3>
+                </div>
                 <p id="empresa">ULPGC S.A.</p>
             </div>
 
             <!--Fotos de otros colores-->
-            <div>
-                <img src="/img/Objeto/img1.jpg" id="altImg3_1" width="120" height="121" />
-                <img src="/img/Objeto/img2.jpg" id="altImg3_2" width="120" height="121" />
-                <img src="/img/Objeto/img3.jpg" id="altImg3_3" width="120" height="121" />
-                <img src="/img/Objeto/img4.jpg" id="altImg3_4" width="120" height="121" />
-                <img src="/img/Objeto/img5.jpg" id="altImg3_5" width="120" height="121" />
-                <img src="/img/Objeto/img6.jpg" id="altImg3_6" width="120" height="121" />
+            <div class="flex">
+                <div>
+                    <img src="/img/Objeto/img1.jpg" id="altImg3_1" class="opcion" />
+                </div>
+                <div>
+                    <img src="/img/Objeto/img2.jpg" id="altImg3_2" class="opcion" />
+                </div>
+                <div>
+                    <img src="/img/Objeto/img3.jpg" id="altImg3_3" class="opcion" />
+                </div>
+                <div>
+                    <img src="/img/Objeto/img4.jpg" id="altImg3_4" class="opcion" />
+                </div>
+                <div>
+                    <img src="/img/Objeto/img5.jpg" id="altImg3_5" class="opcion" />
+                </div>
+                <div>
+                    <img src="/img/Objeto/img6.jpg" id="altImg3_6" class="opcion" />
+                </div>
             </div>
 
             <!--Tallas y fav-->
-            <div>
+            <div class="">
                 Seleccionar talla: <br/>
                 <select name="talla" id="talla">
                     <option value="xs">XS</option>
@@ -66,7 +80,10 @@
                     <option value="l">L</option>
                     <option value="xl">XL</option>
                 </select>
-                <div><a href="">Guia de tallas</a></div>
+                <!--Guía de tallas pretende ser otra API-->
+                <div>
+                    <a href="">Guia de tallas</a>
+                </div>
             </div>
 
             <!--Añadir al carrito con las opciones seleccionadas-->
@@ -76,12 +93,12 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
 </body>
-<footer>
-    <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
-        <br/> Copyrigth@Aitana&Cristóbal
-        <br/> Esta página web está aprobadisima.</p>
-</footer>
+
 
 </html>

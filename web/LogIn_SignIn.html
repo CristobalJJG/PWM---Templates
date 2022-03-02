@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/logIn_SignIn.css">
 </head>
+
 <body>
-   <!--Fondo y backgroun--> 
+    <!--Fondo y backgroun-->
     <div class="fondo">
         <div class="foto-manos">
-            
+
             <!--Cuadrado general-->
-            <div>
+            <div class="recuadro">
                 <!--Cuadrardo inicio sesion-->
                 <div>
                     <!--cabecera Inicio sesion-->
-                    <div>
-                        INICIA SESIÓN
-                    </div>
-                    <form action="">
-                        <input type="text" id="logInEmail" placeholder="Dirección de e-mail" required/>
-                        <input type="text" id="logInPass" placeholder="Contraseña" required/>
-                    </form>
-                    <!--Cuadrado con los logos-->
-                    <div>
-                        <a id="regGoogle"><img src="/img/Logos/gmail.png" width="160" height="100"></a>
-                        <a id="regFacebook"><img src="/img/Logos/facebook.png" width="100" height="100"></a>
-                    </div>
-                    <div>
-                        <a id="regApple"><img src="/img/Logos/apple.png" width="100" height="100"></a>
-                        <a id="regTwitter"><img src="/img/Logos/twitter.png" width="100" height="100"></a>
-                   
-                    </div>
-                </div>
-                    
+                    <div class="recuadro-login w100 h50 izq">
+                        <div>
+                            <h3 class="cent shadow"> INICIA SESIÓN </h3>
+                        </div>
+                        <div>
+                            <form action="signIn">
+                                <input type="text" class="txt txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                                <input type="text" class="txt txtsin" id="signInPass" placeholder="Contraseña" required/>
+                            </form>
+                            <!--Botón para acceder-->
+                            <div class="cent">
+                                <input type="submit" id="btnEnter" value="Enviar" />
+                            </div>
+                        </div>
 
-                <!--Cuadro registrarse-->
-                <div>
-                    <!--cabecera Registro-->
-                    <div>
-                        REGISTRARSE
-                    </div>
-                    <form>
-                        <input type="text" id="signInEmail" placeholder="Dirección de e-mail" required/>
-                        <input type="text" id="signInPass" placeholder="Contraseña" required/>
-                    </form>
-                </div>
 
-                <!--Botón para acceder-->
-                <div>
-                    <input type="submit" id="btnEnter" value="Enviar"/>
+                        <!--Cuadro registrarse-->
+                        <div class="recuadro-signin w100 h50">
+                            <!--cabecera Registro-->
+                            <div>
+                                <h3 class="cent">REGISTRARSE</h3>
+                            </div>
+                            <form action="signIn">
+                                <input type="text" class="txt txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                                <input type="text" class="txt txtsin" id="signInPass" placeholder="Contraseña" required/>
+                            </form>
+                            <!--Botón para acceder-->
+                            <div class="cent">
+                                <input type="submit" id="btnEnter" value="Enviar" />
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-
-
-        </div>
-    </div>
 </body>
+
 </html>
