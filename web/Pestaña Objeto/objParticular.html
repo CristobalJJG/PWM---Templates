@@ -13,21 +13,34 @@
     <header>
         <div class="c-fondo">
             <!--Nombre de la tienda-->
-            <div class="nombre">Nombre</div>
+            <div class="nombre">
+                <p>Nombre</p>
+            </div>
     
             <!--Parte del usuario-->
             <div>
-                <img src="/img/Logos/Usuario.png" class="foto-u" height="25" width="25">
-                <p id="nombreUser" class="userName">Nombre de usuario</p>
+                <a href="/web/PerfilUsuario/Inicio.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
+                    </div>
+                    <div>
+                        <p id="nombreUser" class="userName">Nombre de usuario</p>
+                    </div>
+                </a>
             </div>
-    
             <!--Separación-->
             <sep class="sep"></sep>
     
             <!--Carrito-->
             <div>
-                <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
-                <p class="c-nombre">Carrito</p>
+                <a href="/web/Cesta/cesta.html">
+                    <div  class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
+                    </div>
+                    <div>
+                        <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
@@ -60,11 +73,11 @@
             </div>
             <br/>
             <!--Añadir al carrito con las opciones seleccionadas-->
-            <div>
+            <div class="flex">
                 <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
                 <br/><br/>
                 <button id="addFavourite" onclick="addFavourite">
-                    <span id="fav"></span>
+                    <p class="fav"><3</p>
                 </button>
             </div>
         </div>

@@ -3,41 +3,101 @@
 <head>
     <meta charset="utf-8">
     <title>Usuario-Compras</title>
-    <link rel="stylesheet" href="/CSS/perfil/compras.css">
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header_perfil.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/perfil/perfil.css">
 </head>
-<header>
-    <div class="header">
-        <div>Nombre</div>
-        <a href="/web/PerfilUsuario/Inicio.html">Inicio</a>
-        <a href="/web/PerfilUsuario/Ventas.html">Ventas</a>
-        <a href="/web/PerfilUsuario/Compras.html">Compras</a>
-    </div>
-</header>
 <body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">
+                <p>Nombre</p>
+            </div>
+            <div  class="izq full">
+                <ul class="cabecera">
+                    <li><a href="/web/PerfilUsuario/Inicio.html">Perfil</a></li>
+                    <li class="choosen"><a href="/web/PerfilUsuario/Compras.html">Compras</a></li>
+                    <li><a href="/web/PerfilUsuario/Ventas.html">Vender</a></li>
+                </ul>
+            </div>
+            <!--Parte del usuario-->
+            <div>
+                <a href="/web/PerfilUsuario/Inicio.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/Usuario.png" id="foto-u" height="25" width="25">
+                    </div>
+                    <div>
+                        <p id="nombreUser" class="userName">Nombre de usuario</p>
+                    </div>
+                </a>
+            </div>
+            <!--Separación-->
+            <sep class="sep"></sep>
+    
+            <!--Carrito-->
+            <div>
+                <a href="/web/Cesta/cesta.html">
+                    <div  class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                    </div>
+                    <div>
+                        <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
     <!--Fondo gris-->
-    <div>
+    <div class="f-gris">
         <!--Imagen del usuario-->
         <div>
-            <img src="/img/Logos/Usuario.png" id="userPicture" width="200" height="200"/>
+            <div class="izq pict top-m">
+                <img src="/img/Logos/Usuario.png" id="userPicture" width="200" height="200"/>
+                <div class="cent top-m">
+                    <form action="/web/catalogo.html">
+                        <input type="submit" value="Catálogo" id="btnCatalogo">    
+                    </form>
+                </div>
+            </div>
         </div>
-        <div>
-            <button id="btnCatalogo">Catálogo</button>
-        </div>
+        
         <!--Fondo de los objetos-->
-        <div>
-            <ul>
-                <li id="Obj1">
-                    <p class="foto cosa" id="objFoto">foto</p> 
-                    <p class="desc cosa" id="objDescripcion">descripción</p>
-                    <div class="palo"></div>
+        <div class=" der recuadro top-m">
+            <ul class="objetos">
+                <li class="objeto" id="Obj1">
+                    <div class="flex">
+                        <div><img class="objFoto" id="objFoto1"></div> 
+                        <div class="full">
+                            <p class="nObj" id="nombreObjeto1">Objeto 1</p>
+                            <p class="desc " id="objDescripcion">
+                                Esto sería un ejemplo para ver como se despliega el recuadro de textod e la 
+                                descripción, de forma que se vea lo más decente posible, sin tener que modificar
+                                nada extraño, simplemente con lo qeu ya hay colocado.
+                            </p>
+                        </div>
+                    </div>
                 </li>
-                <li id="Obj2">
-                    <div class="foto cosa" id="objFoto">foto</div> 
-                    <div class="desc cosa" id="objDescripcion">descripción</div>
-                    <div class="palo"></div>
-                 </li>
+
+                <li class="objeto" id="Obj2">
+                    <div class="flex">
+                        <div><img class="objFoto" id="objFoto2"></div> 
+                        <div class="full">
+                            <p class="nObj" id="nombreObjeto2">Objeto 2</p>
+                            <p class="desc " id="objDescripcion">descripción</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
+    
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
 </body>
 </html>

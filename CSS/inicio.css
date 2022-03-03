@@ -7,6 +7,13 @@
     mix-blend-mode: normal;
 }
 
+*::-webkit-scrollbar{
+    width:12px;
+}
+*::-webkit-scrollbar-track{
+    scrollbar-color: #222;
+}
+
 .bg {
     position: absolute;
     width: 100%;

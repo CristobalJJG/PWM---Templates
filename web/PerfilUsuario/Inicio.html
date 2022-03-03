@@ -3,35 +3,72 @@
 <head>
     <meta charset="utf-8">
     <title>Usuario-Inicio</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header_perfil.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/perfil/perfil.css">
 </head>
-<header>
-    <div class="header">
-        <div>Nombre</div>
-        <a href="/web/PerfilUsuario/Inicio.html" id="perfilInicio">Inicio</a>
-        <a href="/web/PerfilUsuario/Ventas.html" id="perfilVentas">Ventas</a>
-        <a href="/web/PerfilUsuario/Compras.html" id="perfilCompras">Compras</a>
-    </div>
-</header>
 <body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">
+                <p>Nombre</p>
+            </div>
+            <div  class="izq full">
+                <ul class="cabecera">
+                    <li class="choosen"><a href="/web/PerfilUsuario/Inicio.html">Perfil</a></li>
+                    <li><a href="/web/PerfilUsuario/Compras.html">Compras</a></li>
+                    <li><a href="/web/PerfilUsuario/Ventas.html">Vender</a></li>
+                </ul>
+            </div>
+            <!--Parte del usuario-->
+            <div>
+                <a href="/web/PerfilUsuario/Inicio.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/Usuario.png" id="foto-u" height="25" width="25">
+                    </div>
+                    <div>
+                        <p id="nombreUser" class="userName">Nombre de usuario</p>
+                    </div>
+                </a>
+            </div>
+            <!--Separación-->
+            <sep class="sep"></sep>
+    
+            <!--Carrito-->
+            <div>
+                <a href="/web/Cesta/cesta.html">
+                    <div  class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                    </div>
+                    <div>
+                        <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
     <!--Fondo gris-->
-    <div>
+    <div class="f-gris">
         <!--Imagen del usuario-->
-        <div>
+        <div class="izq pict top-m">
             <img src="/img/Logos/Usuario.png" id="userPicture" width="200" height="200"/>
         </div>
         <!--Fondo de los datos-->
-        <div>
+        <div class="der recuadro top-m">
             <!--zona de los datos-->
-            <div>
-                <p id="userName">Nombre completo</p>
-                <p id="userAge">Edad</p>
-                <p id="userWallet">Cartera</p>
-                <p id="userData1">Más datos1</p>
-                <p id="userData2">Más datos2</p>
-                <p id="userData3">Más datos3</p>
+            <div class="izq cent">
+                <div><p id="userName">Nombre completo</p></div>
+                <div><p id="userAge">Edad</p></div>
+                <div><p id="userWallet">Cartera</p></div>
+                <div><p id="userData1">Más datos1</p></div>
+                <div><p id="userData2">Más datos2</p></div>
+                <div><p id="userData3">Más datos3</p></div>
             </div>
             <!--Zona ubicación-->
-            <div>
+            <div class="der cent">
                 <p>Ubicación</p>
                 <div style="background-color: grey; width: 300px; height: 300px;" id="userUbicacion">
                     mapa
@@ -39,5 +76,10 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
 </body>
 </html>

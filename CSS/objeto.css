@@ -44,6 +44,7 @@ textarea{
     transition: 200ms;
     margin-right: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .opcion:hover {
@@ -59,9 +60,35 @@ textarea{
 button{    
     width: 50px;
     height: 50px;
+    transform: rotate(-90deg);
+    margin-left: 50px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    align-items: center;
+    justify-items: center;
+    background-color: #AAA;
+    padding: 0;
+    transition: 200ms;
+    cursor: pointer;
 }
 
-button #fav{
-    background-image: url('https://brandflow.net/assets/img/featured/mdb-prolog.jpg') !important;
-    background-size: contain;
+button .fav{
+    width: 45px;
+    height: 45px;
+    color: rgb(216, 24, 24);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 5px 0 0 0;
+    transition: 200ms;
+}
+
+button:hover{
+    background-color: rgb(216, 24, 24);
+}
+button .fav:hover{
+    color: #aaa
 }

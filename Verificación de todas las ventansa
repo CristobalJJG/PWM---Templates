@@ -1,0 +1,29 @@
+Cosa a destacar: 
+    objEmpresa, la parte de template para los colores alternativos.
+    perfil.compras - se pueden añadir elementos a la lista
+
+#--- Hecho ---#
+Inicio
+Objeto compra venta
+Objeto Tienda
+SignIn/LogIn
+
+
+#--- por verificar ---#
+Perfil de usuario (inicio)
+Perfil de usuario (ventas)
+Perfil de usuario (Compras)
+
+cesta
+recogida en tienda
+envio a domicilio
+fecha de entrega
+datos de compra online
+datos de compra en tienda
+
+Catalogo
+
+#--- por hacer ---#
+Vender objeto particular
+Vender objeto empresa
+Inicio compras(Categorias)
