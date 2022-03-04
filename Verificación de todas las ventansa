@@ -4,8 +4,7 @@ Cosa a destacar:
 
 #--- Hecho ---#
 Inicio
-Objeto compra venta
-Objeto Tienda
+Objeto Particular
 SignIn/LogIn
 
 Perfil de usuario (inicio)
@@ -14,7 +13,6 @@ Perfil de usuario (Compras)
 Ventas-particular
 Vender objeto empresa
 
-
 cesta
 recogida en tienda
 envio a domicilio
@@ -22,9 +20,7 @@ fecha de entrega
 datos de compra online
 
 
-#--- por verificar ---#
-
-
-Catalogo
-
 #--- por hacer ---#
+Objeto Empresa
+Catalogo
+Categorias

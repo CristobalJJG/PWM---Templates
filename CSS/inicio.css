@@ -24,7 +24,7 @@
     transform: rotate(90deg);
 }
 
-.btn {
+input[type="submit"].btn {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     position: absolute;
@@ -41,19 +41,19 @@
     transition: ease-in 50ms;
 }
 
-.btn.izq {
+input[type="submit"].btn.izq  {
     left: calc(50% - 78px/2 - 450px);
     top: calc(50% - 150px/2);
     background: rgba(255, 255, 255, 0.2);
 }
 
-.btn.der {
+input[type="submit"].btn.der {
     left: calc(50% - 80px/2 + 325px);
     top: calc(50% - 150px/2);
     background: rgba(255, 255, 255, 0.2);
 }
 
-.btn:hover {
+input[type="submit"].btn:hover {
     width: 300px;
     height: 100px;
     border: 20px, solid, #BA8D96;
@@ -76,6 +76,7 @@
 input[type="text"], 
 input[type="number"],
 input[type="submit"],
+input[type="button"],
 select,
 textarea{
     border-radius: 5px;
@@ -83,13 +84,14 @@ textarea{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #eee;
     border: 1px solid #555;
-    color: #555;
+    color: #222;
 }
 
 input[type="text"]:hover, 
 input[type="number"]:hover,
 input[type="submit"]:hover,
+input[type="button"]:hover,
 select:hover{
-    background-color: #555;
+    background-color: #777;
     color: #eee;
 }
