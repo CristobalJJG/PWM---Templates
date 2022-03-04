@@ -97,23 +97,16 @@ ul {
 
 .fecha {
     background-color: #555;
-    width: 250px;
-    height: 450px;
+    position:absolute;
+    width: 80%;
+    left: 10%;
+    height: 60%;
     margin-top: 40px;
 }
 
-.f-izq {
-    float: left;
-    position: absolute;
-    margin-left: 20px;
+.bot{
+    margin-top:80%;
 }
-
-.f-der {
-    float: right;
-    position: ab;
-    margin-right: 20px;
-}
-
 
 /* Métodos de pago */
 

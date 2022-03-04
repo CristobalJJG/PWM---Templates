@@ -8,22 +8,23 @@ Objeto compra venta
 Objeto Tienda
 SignIn/LogIn
 
-
-#--- por verificar ---#
 Perfil de usuario (inicio)
 Perfil de usuario (ventas)
 Perfil de usuario (Compras)
+Ventas-particular
+Vender objeto empresa
+
 
 cesta
 recogida en tienda
 envio a domicilio
 fecha de entrega
 datos de compra online
-datos de compra en tienda
+
+
+#--- por verificar ---#
+
 
 Catalogo
 
 #--- por hacer ---#
-Vender objeto particular
-Vender objeto empresa
-Inicio compras(Categorias)

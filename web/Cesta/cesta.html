@@ -10,19 +10,25 @@
 <body>
     <h1>Cesta</h1>
     <!--Parte de arriba, opciones para la entrega de los productos-->
-    <div>
-        <div class="cuadro c1"><a class="txt" href="/web/Cesta/op1.html">Recogida en tienda</a></div>
-        <div class="cuadro c2"><a class="txt" href="/web/Cesta/op2.html">Envio a domicilio</a></div>
-        <div class="cuadro c3"><a class="txt" href="/web/Cesta/op3.html">Envio a domicilio Express</a></div>
-        <div class="cuadro c4"><a class="txt" href="/web/Cesta/op4.html">Entrega Programada</a></div>
+    <div class="flex full">
+        <a class="txt" href="/web/Cesta/op1.html"><div class="cuadro">Recogida en tienda</div></a>
+        <a class="txt" href="/web/Cesta/op2.html"><div class="cuadro">Envio a domicilio</div></a>
+        <a class="txt" href="/web/Cesta/op3.html"><div class="cuadro">Envio a domicilio Express</div></a>
     </div>
 
     <!--Parte de abajo, articulos en la cesta-->
+    <!--Se asume que a la hora de tener x elementos en el carrito
+    se habrán insertado x li dentro de "articulos"-->
     <div class="carrito">
-        <ul id="ariculos">
+        <ul id="articulos">
             <li class="izq producto">Articulo 1</li>
             <li class="izq producto">Articulo 2</li>
             <li class="izq producto">Articulo 3</li>
+            <li class="izq producto">Articulo 4</li>
         </ul>
+        <div class="der costo">
+            <div>Costo total</div>
+            <p id="costoTotal">50€</p>
+        </div>
     </div>
 </body>

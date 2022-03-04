@@ -21,14 +21,25 @@
             </div>
 
             <div class="full">
-                <div class="izq full">
+                <div class="full">
                     <label for="descripcion">Descripción</label>
                     <textarea name="descripcion" id="descripcion"></textarea>
                 </div>
-                <div class="der full">
-                    <label for="ubicacion">Ubicación</label>
-                    <div id="ubicacion" class="mapa">
-                        mapa
+                <div class="full h50">
+                    <p>¿A qué ubicaciones llegaría?</p>
+                    <form action="addUbicación">
+                        <div class="cent izq">
+                            <label for="ubicacion">Ubicación</label><br/>
+                            <input type="text" id="ubi"/><br/>
+                            <input type="submit" value="Añadir">
+                        </div>
+                    </form>
+                    <div id="listaUbis" class="cent der">
+                        <label for="ubisTotal">Ubicaciones</label>
+                        <ul id="ubisTotal">
+                            <li class="ubi">CC La Ballena - Las Palmas de GC</li>
+                            <li class="ubi">CC Los Alisios - Las Palmas de GC</li>
+                        </ul>
                     </div>
                 </div>
             </div><br/>

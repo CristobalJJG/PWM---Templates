@@ -7,13 +7,6 @@
     mix-blend-mode: normal;
 }
 
-*::-webkit-scrollbar{
-    width:12px;
-}
-*::-webkit-scrollbar-track{
-    scrollbar-color: #222;
-}
-
 .bg {
     position: absolute;
     width: 100%;
@@ -78,4 +71,25 @@
 
 .cent {
     text-align: center;
+}
+
+input[type="text"], 
+input[type="number"],
+input[type="submit"],
+select,
+textarea{
+    border-radius: 5px;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eee;
+    border: 1px solid #555;
+    color: #555;
+}
+
+input[type="text"]:hover, 
+input[type="number"]:hover,
+input[type="submit"]:hover,
+select:hover{
+    background-color: #555;
+    color: #eee;
 }
