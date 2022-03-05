@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title id="ObjName">Nombre del objeto</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/objeto.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">
+                <p>Nombre</p>
+            </div>
+    
+            <!--Parte del usuario-->
+            <div>
+                <a href="/web/PerfilUsuario/Inicio.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
+                    </div>
+                    <div>
+                        <p id="nombreUser" class="userName">Nombre de usuario</p>
+                    </div>
+                </a>
+            </div>
+            <!--Separación-->
+            <sep class="sep"></sep>
+    
+            <!--Carrito-->
+            <div>
+                <a href="/web/Cesta/cesta.html">
+                    <div  class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
+                    </div>
+                    <div>
+                        <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div>
+        <!--Div imagen-->
+        <div class="izq">
+            <img src="/img/catalogo/img_prueba.webp" class="img" id="idImg1" width="450" height="600" />
+        </div>
+
+        <!--Div información-->
+        <div class="der recuadro">
+            <!--Nombres e ids-->
+            <div class="izq">
+                <div><p id="objName">Nombre del objeto</p></div>
+                <div><h3 id="precio">50€</h3></div>
+                <div><p id="propietario">Cristóbal José Jiménez Gómez</p></div>
+            </div>
+
+            <!--Descripción del artículo-->
+            <div>
+                <textarea name="descripcion" id="img1_desc" cols="102" rows="8">Descripción del artículo</textarea>
+            </div>
+
+            <!--Tallas y fav-->
+            <div>
+                <p>Ubicación</p>
+                <div style="background-color: grey; width: 938px; height: 150px;" id="userUbicacion">
+                    mapa
+                </div>
+            </div>
+            <br/>
+            <!--Añadir al carrito con las opciones seleccionadas-->
+            <div class="flex">
+                <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
+                <br/><br/>
+                <button id="addFavourite" onclick="addFavourite">
+                    <p class="fav"><3</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
+</body>
+
+
+</html>

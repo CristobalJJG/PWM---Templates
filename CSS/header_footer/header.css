@@ -1,0 +1,86 @@
+/* background */
+
+.c-fondo {
+    background-color: #b6b6b6;
+    width: 100%;
+    height: 50px;
+    
+    text-align: center;
+    justify-self: center;
+}
+
+.sep {
+    position: relative;
+    float: right;
+    right: 20px;
+    border: 1px solid #2222;
+    background-color: #2222;
+    height: 1px;
+    top: 3px;
+    height: 75%;
+}
+
+p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Nombre de la pagina */
+
+.nombre {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    background-color: #D0D0D0;
+    float: left;
+}
+
+img.foto{
+    width: 40px;
+    height: 40px;
+}
+
+/* Parte del carrito */
+
+.c-nombre {
+    position: relative;
+    padding: 0;
+    margin: 7px 0 0 0px;
+    right: 5px;
+    float: right;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.foto-c {
+    position: relative;
+    margin-right: 40px;
+    margin-top: 3px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* Parte del Usuario */
+
+.userName {
+    position: relative;
+    padding: 0;
+    margin: 7px 0 0 0px;
+    right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#foto-u {
+    position: relative;
+    margin-top: 3px;
+    margin-right: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+a, a:visited{
+    font-style: unset;
+    color: #222;
+}

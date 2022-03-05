@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/logIn_SignIn.css">
+</head>
+
+<body>
+    <!--Fondo y backgroun-->
+    <div class="fondo">
+        <div class="foto-manos">
+
+            <!--Cuadrado general-->
+            <div class="recuadro">
+                <!--Cuadrardo inicio sesion-->
+                <div>
+                    <!--cabecera Inicio sesion-->
+                    <div class="recuadro-login w100 h50 izq">
+                        <div>
+                            <h3 class="cent shadow"> INICIA SESIÓN </h3>
+                        </div>
+                        <div class="cent">
+                            <form action="signIn">
+                                <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                                <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+                            </form>
+                            <!--Botón para acceder-->
+                            <div>
+                                <input type="submit" id="btnEnter" value="Enviar" />
+                            </div>
+                        </div>
+
+
+                        <!--Cuadro registrarse-->
+                        <div class="recuadro-signin w100 h50 cent">
+                            <!--cabecera Registro-->
+                            <div>
+                                <h3 class="cent">REGISTRARSE</h3>
+                            </div>
+                            <form action="signIn">
+                                <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                                <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+                            </form>
+                            <!--Botón para acceder-->
+                            <div class="cent">
+                                <input type="submit" id="btnEnter" value="Enviar" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+</body>
+
+</html>

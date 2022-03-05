@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Introducir una venta</title>
+    
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header_perfil.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/perfil/perfil.css">
+    <link rel="stylesheet" href="/CSS/perfil/venta.css">
+</head>
+<body>
+    <!--Fondo gris-->
+    <div class="f-gris top-v v-pad">
+        <form action="addObjeto">
+            <div class="line">
+                <label for="objNombre">Nombre del objeto</label>
+                <input type="text" id="objNombre" placeholder="Maceta">
+            </div>
+
+            <div class="full">
+                <div class="full">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion"></textarea>
+                </div>
+                <div class="full h50">
+                    <p>¿A qué ubicaciones llegaría?</p>
+                    <form action="addUbicación">
+                        <div class="cent izq">
+                            <label for="ubicacion">Ubicación</label><br/>
+                            <input type="text" id="ubi"/><br/>
+                            <input type="submit" value="Añadir">
+                        </div>
+                    </form>
+                    <div id="listaUbis" class="cent der">
+                        <label for="ubisTotal">Ubicaciones</label>
+                        <ul id="ubisTotal">
+                            <li class="ubi">CC La Ballena - Las Palmas de GC</li>
+                            <li class="ubi">CC Los Alisios - Las Palmas de GC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><br/>
+            <div class="full">
+                <div class="line izq">
+                    <label for="costo">Costo</label><input type="number" id="costo">
+                    <label for="Más datos">Más datos</label><input type="text" id="Más datos">
+                    <label for="Más datos">Más datos</label><input type="text" id="Más datos2">
+                    <label for="etiqueta">Etiqueta</label>
+                    <select name="etiqueta" id="etiqueta">
+                        <option value="1">Categoría 1</option>
+                        <option value="2">Categoría 2</option>
+                        <option value="3">Categoría 3</option>
+                        <option value="4">Categoría 4</option>
+                    </select>
+                </div>
+                <div class="der">
+                    <form action="addPicture">
+                        <input type="file" name="objImage" id="objImage">
+                        <!--quiero que se entienda que no es estático, a medida que se vayan añadiendo imágenes
+                        Se irán añadiendo a productImages-->
+                        <div class="flex full over" id="productImages">
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                        </div>
+                    </form>    
+                </div>
+            </div>
+            <div class="cent">
+                <input type="submit" name="addObject" id="addObject"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

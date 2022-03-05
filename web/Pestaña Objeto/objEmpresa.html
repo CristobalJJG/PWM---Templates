@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title id="ObjName">Objeto</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/objeto.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="c-fondo">
+            <!--Nombre de la tienda-->
+            <div class="nombre">
+                <p>Nombre</p>
+            </div>
+
+            <!--Parte del usuario-->
+            <div>
+                <a href="/web/PerfilUsuario/Inicio.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
+                    </div>
+                    <div>
+                        <p id="nombreUser" class="userName">Nombre de usuario</p>
+                    </div>
+                </a>
+            </div>
+            <!--Separación-->
+            <sep class="sep"></sep>
+
+            <!--Carrito-->
+            <div>
+                <a href="/web/Cesta/cesta.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
+                    </div>
+                    <div>
+                        <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div>
+        <!--Div imagen-->
+        <div class="izq">
+            <img src="/img/Objeto/Img_pruebas1.jpg" class="img" id="mainImg" />
+        </div>
+
+        <!--Div información-->
+        <div class="der recuadro">
+            <!--Info-->
+            <div>
+                <h2 id="objName">Chaqueta</h2>
+                <div>
+                    <h3 id="precio">50€</h3>
+                </div>
+                <p id="empresa">ULPGC S.A.</p>
+            </div>
+
+            <!--Fotos de otros colores-->
+            <div class="flex">
+                <!-- Esto se usará luego para la realización de colores alternativos -->
+                <template>
+                    <div><img src="/img/Objeto/img2.jpg" id="alt1" class="opcion" /></div>
+                </template>
+
+                <!-- Para que se vea como pretende ser se realiza lo de abajo-->
+                <div>
+                    <div><img src="/img/Objeto/img2.jpg" id="alt1" class="opcion" /></div>
+                </div>
+                <div>
+                    <div><img src="/img/Objeto/img1.jpg" id="alt2" class="opcion" /></div>
+                </div>
+                <div>
+                    <div><img src="/img/Objeto/img3.jpg" id="alt3" class="opcion" /></div>
+                </div>
+                <div>
+                    <div><img src="/img/Objeto/img4.jpg" id="alt4" class="opcion" /></div>
+                </div>
+                <div>
+                    <div><img src="/img/Objeto/img5.jpg" id="alt5" class="opcion" /></div>
+                </div>
+                <div>
+                    <div><img src="/img/Objeto/img6.jpg" id="alt6" class="opcion" /></div>
+                </div>
+            </div>
+
+            <br>
+            <div class="izq cent">
+                <!--Tallas y fav-->
+                <div>
+                    Seleccionar talla: <br/>
+                    <select name="talla" id="talla">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <!--Guía de tallas pretende ser otra API
+                    <div>
+                        <a href="">Guia de tallas</a>
+                    </div>-->
+                </div>
+
+                <!--Añadir al carrito con las opciones seleccionadas-->
+                <div class="flex">
+                    <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
+                    <br/><br/>
+                    <button id="addFavourite" onclick="addFavourite">
+                        <p class="fav"><3</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
+            <br/> Copyrigth@Aitana&Cristóbal
+            <br/> Esta página web está aprobadisima.</p>
+    </footer>
+</body>
+
+
+</html>

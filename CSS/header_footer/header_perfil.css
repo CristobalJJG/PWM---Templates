@@ -1,0 +1,54 @@
+/* Parte del Usuario */
+
+.userName {
+    position: relative;
+    padding: 0;
+    margin: 7px 0 0 0px;
+    right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#foto-u {
+    position: relative;
+    margin-top: 3px;
+    margin-right: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+a, a:visited{
+    font-style: unset;
+    color: #222;
+}
+
+
+/* Links de la parte del perfil*/
+ul.cabecera, .full{
+    height: 100%;
+}
+
+ul.cabecera{
+    left: 25px;
+    margin: 0;
+    display: flex;
+}
+
+li{
+    padding:16px 25px 0 25px;
+    list-style: none;
+    transition: 200ms;
+}
+
+li a{
+    font-size: large;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+li:hover, a:hover, li.choosen{
+    background-color: #aaa;
+    color: #000;
+    border-radius: 10px;
+}
+
