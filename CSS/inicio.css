@@ -5,6 +5,7 @@
     overflow: offset;
     background: #C98B98;
     mix-blend-mode: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg {
@@ -41,7 +42,7 @@ input[type="submit"].btn {
     transition: ease-in 50ms;
 }
 
-input[type="submit"].btn.izq  {
+input[type="submit"].btn.izq {
     left: calc(50% - 78px/2 - 450px);
     top: calc(50% - 150px/2);
     background: rgba(255, 255, 255, 0.2);
@@ -73,25 +74,27 @@ input[type="submit"].btn:hover {
     text-align: center;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="number"],
 input[type="submit"],
 input[type="button"],
+input[type="password"],
 select,
-textarea{
+textarea {
     border-radius: 5px;
     font-size: large;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #eee;
     border: 1px solid #555;
     color: #222;
 }
 
-input[type="text"]:hover, 
+input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
-select:hover{
-    background-color: #777;
+input[type="password"]:hover,
+select:hover {
+    background-color: #aaa;
     color: #eee;
 }

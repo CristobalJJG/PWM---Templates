@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title id="ObjName"></title>
+    <title id="ObjName">Objeto</title>
     <link rel="stylesheet" href="/CSS/inicio.css">
     <link rel="stylesheet" href="/CSS/objeto.css">
     <link rel="stylesheet" href="/CSS/header_footer/footer.css">
@@ -16,7 +16,7 @@
             <div class="nombre">
                 <p>Nombre</p>
             </div>
-    
+
             <!--Parte del usuario-->
             <div>
                 <a href="/web/PerfilUsuario/Inicio.html">
@@ -30,11 +30,11 @@
             </div>
             <!--Separación-->
             <sep class="sep"></sep>
-    
+
             <!--Carrito-->
             <div>
                 <a href="/web/Cesta/cesta.html">
-                    <div  class="cuadro">
+                    <div class="cuadro">
                         <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
                     </div>
                     <div>
@@ -90,26 +90,31 @@
             </div>
 
             <br>
-            <!--Tallas y fav-->
-            <div>
-                Seleccionar talla: <br/>
-                <select name="talla" id="talla">
-                    <option value="xs">XS</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                </select>
-                <!--Guía de tallas pretende ser otra API-->
+            <div class="izq cent">
+                <!--Tallas y fav-->
                 <div>
-                    <a href="">Guia de tallas</a>
+                    Seleccionar talla: <br/>
+                    <select name="talla" id="talla">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <!--Guía de tallas pretende ser otra API
+                    <div>
+                        <a href="">Guia de tallas</a>
+                    </div>-->
                 </div>
-            </div>
 
-            <!--Añadir al carrito con las opciones seleccionadas-->
-            <div>
-                <input type="button" id="addCarrito" value="Añadir al carrito">
-                <p>Fav</p>
+                <!--Añadir al carrito con las opciones seleccionadas-->
+                <div class="flex">
+                    <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
+                    <br/><br/>
+                    <button id="addFavourite" onclick="addFavourite">
+                        <p class="fav"><3</p>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

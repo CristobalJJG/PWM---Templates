@@ -1,11 +1,17 @@
 Cosa a destacar: 
     objEmpresa, la parte de template para los colores alternativos.
     perfil.compras - se pueden añadir elementos a la lista
+    catálogo - template de cómo se verían los objetos
 
 #--- Hecho ---#
 Inicio
 Objeto Particular
+Objeto Empresa
 SignIn/LogIn
+
+Catalogo
+
+Categorias
 
 Perfil de usuario (inicio)
 Perfil de usuario (ventas)
@@ -21,6 +27,3 @@ datos de compra online
 
 
 #--- por hacer ---#
-Objeto Empresa
-Catalogo
-Categorias
