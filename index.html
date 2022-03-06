@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Index Página</title>
     <link rel="stylesheet" href="/CSS/inicio.css">
 </head>
+
 <body>
-    <!--Background-->
-    <img src="/img/gestion-compra-venta.jpg" class="bg"/>
+    <div class="container">
+        <!--Izquierda-->
+        <div class="l-cont">
+            <form action="/web/Compra/categoriasCompra.html">
+                <input type="submit" class="btn izq" id="btnCompra" value="COMPRA">
+            </form>
+        </div>
 
-    <!--Izquierda-->
-    <div>
-        <form action="/web/catalogo.html">
-            <input type="submit" class="btn izq" id="btnCompra" value="COMPRA">
-        </form>
-    </div>
-
-    <!--Palito del medio-->
-    <div class="palo"></div>
-
-    <!--Derecha-->
-    <div>
-        <form action="/web/LogIn_SignIn.html">
-            <input type="submit" class="btn der" id="btnVenta" value="VENTA">
-        </form>
+        <!--Derecha-->
+        <div class="r-cont">
+            <form action="/web/LogIn_SignIn.html">
+                <input type="submit" class="btn der" id="btnVenta" value="VENTA">
+            </form>
+        </div>
     </div>
 </body>
+
 </html>

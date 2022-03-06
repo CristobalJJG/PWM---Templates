@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>Usuario-Compras</title>
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="/CSS/header_footer/footer.css">
     <link rel="stylesheet" href="/CSS/perfil/perfil.css">
 </head>
+
 <body>
     <header>
-        <div class="c-fondo">
+        <div class="cab-fondo">
             <!--Nombre de la tienda-->
             <div class="nombre">
                 <p>Nombre</p>
             </div>
-            <div  class="izq full">
+            <div class="izq full">
                 <ul class="cabecera">
                     <li><a href="/web/PerfilUsuario/Inicio.html">Perfil</a></li>
                     <li class="choosen"><a href="/web/PerfilUsuario/Compras.html">Compras</a></li>
@@ -36,15 +38,25 @@
             </div>
             <!--Separación-->
             <sep class="sep"></sep>
-    
+
             <!--Carrito-->
             <div>
-                <a href="/web/Cesta/cesta.html">
-                    <div  class="cuadro">
-                        <img src="/img/Logos/carrito.jpg" class="foto-c foto">
+                <a href="/web/Compra/Cesta/cesta.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
                     </div>
                     <div>
                         <p class="c-nombre">Carrito</p>
+                    </div>
+                </a>
+            </div>
+            <!--Separación-->
+            <sep class="sep"></sep>
+            <!--Favoritos-->
+            <div>
+                <a href="\web\Compra\favsCompra.html">
+                    <div class="cuadro">
+                        <img src="/img/Logos/fav0.png" class="foto-c  foto">
                     </div>
                 </a>
             </div>
@@ -55,27 +67,38 @@
         <!--Imagen del usuario-->
         <div>
             <div class="izq pict top-m">
-                <img src="/img/Logos/Usuario.png" id="userPicture" width="200" height="200"/>
+                <img src="/img/Logos/Usuario.png" id="userPicture" width="200" height="200" />
                 <div class="cent top-m">
-                    <form action="/web/catalogo.html">
-                        <input type="submit" value="Catálogo" id="btnCatalogo">    
+                    <form action="/web/Compra/catalogoCompras.html">
+                        <input type="submit" value="Catálogo" id="btnCatalogo">
                     </form>
                 </div>
             </div>
         </div>
-        
+
         <!--Fondo de los objetos-->
         <div class=" der recuadro top-m">
             <ul class="objetos">
+                <template>
+                    <li class="objeto" id="Obj1">
+                        <div class="flex">
+                            <div><img class="objFoto" id="objFoto1"></div> 
+                            <div class="full">
+                                <p class="nObj" id="nombreObjeto1">Objeto 1</p>
+                                <p class="desc " id="objDescripcion">
+                                    Descripción del objeto
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </template>
                 <li class="objeto" id="Obj1">
                     <div class="flex">
-                        <div><img class="objFoto" id="objFoto1"></div> 
+                        <div><img class="objFoto" id="objFoto1"></div>
                         <div class="full">
                             <p class="nObj" id="nombreObjeto1">Objeto 1</p>
                             <p class="desc " id="objDescripcion">
-                                Esto sería un ejemplo para ver como se despliega el recuadro de textod e la 
-                                descripción, de forma que se vea lo más decente posible, sin tener que modificar
-                                nada extraño, simplemente con lo qeu ya hay colocado.
+                                Esto sería un ejemplo para ver como se despliega el recuadro de textod e la descripción, de forma que se vea lo más decente posible, sin tener que modificar nada extraño, simplemente con lo qeu ya hay colocado.
                             </p>
                         </div>
                     </div>
@@ -83,7 +106,7 @@
 
                 <li class="objeto" id="Obj2">
                     <div class="flex">
-                        <div><img class="objFoto" id="objFoto2"></div> 
+                        <div><img class="objFoto" id="objFoto2"></div>
                         <div class="full">
                             <p class="nObj" id="nombreObjeto2">Objeto 2</p>
                             <p class="desc " id="objDescripcion">descripción</p>
@@ -93,11 +116,12 @@
             </ul>
         </div>
     </div>
-    
+
     <footer>
         <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
             <br/> Copyrigth@Aitana&Cristóbal
             <br/> Esta página web está aprobadisima.</p>
     </footer>
 </body>
+
 </html>

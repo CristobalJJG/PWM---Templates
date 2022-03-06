@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<!--No se como hacer un chat sin que parezca estático-->
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/CSS/chat.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/header_footer/header.css" />
+    <title>Chat</title>
+</head>
+
+<body>
+    <header>
+        <header>
+            <div class="cab-fondo">
+                <!--Nombre de la tienda-->
+                <div class="nombre">
+                    <p>Nombre</p>
+                </div>
+
+                <!--Parte del usuario-->
+                <div>
+                    <a href="/web/PerfilUsuario/Inicio.html">
+                        <div class="cuadro">
+                            <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
+                        </div>
+                        <div>
+                            <p id="nombreUser" class="userName">Nombre de usuario</p>
+                        </div>
+                    </a>
+                </div>
+                <!--Separación-->
+                <sep class="sep"></sep>
+                <!--Favoritos-->
+                <div>
+                    <a href="\web\Venta\favsVenta.html">
+                        <div class="cuadro">
+                            <img src="/img/Logos/fav0.png" class="foto-c  foto">
+                        </div>
+                    </a>
+                </div>
+                <!--Separación-->
+                <sep class="sep"></sep>
+                <!--Favoritos-->
+                <div>
+                    <a href="/web/Venta/chat.html">
+                        <div class="cuadro">
+                            <img src="/img/Logos/chat.png" class="foto-c  foto">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="chatCont">
+            <h1 class="cent">Mensajes</h1>
+            <div class="chats">
+                <ul class="cont-izq">
+                    <li class="s-chat">
+                        <button class="c-fondo" onclick="chargeChat">
+                        <div id="nombre">
+                            <p id="nombre">Aitana:</p>
+                        </div>
+                        <div id="ultimoMensaje">
+                            <p id="ultimoMensaje">Hola, me gustaría comprar una cosa</p>
+                        </div>
+                    </button>
+                    </li>
+                    <li class="s-chat">
+                        <button class="c-fondo" onclick="chargeChat">
+                        <div id="nombre">
+                            <p id="nombre">Cristóbal</p>
+                        </div>
+                        <div id="ultimoMensaje">
+                            <p id="ultimoMensaje">Hola, estoy interesado en aprobar</p>
+                        </div>
+                    </button>
+                    </li>
+                    <li class="s-chat">
+                        <button class="c-fondo" onclick="chargeChat">
+                        <div id="nombre">
+                            <p id="nombre">TutiFruti</p>
+                        </div>
+                        <div id="ultimoMensaje">
+                            <p id="ultimoMensaje">Buenas, ¿Sigue en venta la camisa vaquera?</p>
+                        </div>
+                    </button>
+                    </li>
+                </ul>
+                <div class="box">
+                    <!--Template de vendedor-->
+                    <template class="item c-izq">
+                    <img class="img-der" src="" />
+                    <span class="message msg-izq"> Buenas, me gustaría comprar la chaquetita vaquera. </span>
+                </template>
+                    <!--Template de comprador-->
+                    <template class="item x-der">
+                    <img class="img-izq" src="" />
+                    <span class="message msg-der"> Dale, está a 50, pero para ti, la rebajo a 49,99, por buena persona. </span>
+                </template>
+
+                    <div class="item c-izq">
+                        <img class="img-der" src="" />
+                        <span class="message msg-izq"> Buenas, me gustaría comprar la chaquetita vaquera.</span>
+                    </div>
+
+                    <div class="item c-der">
+                        <img class="img-izq" src="" />
+                        <span class="message msg-der"> Dale, está a 50, pero para ti, la rebajo a 49,99, por buena persona. </span>
+                    </div>
+
+                    <div class="item c-izq">
+                        <img class="img-der" src="" />
+                        <span class="message msg-izq"> Ossss, muchas gracias señor!! </span>
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="text" id="message" placeholder="Escríbele..." />
+                        <button> Send </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

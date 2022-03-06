@@ -1,12 +1,17 @@
 /* background */
 
-.c-fondo {
+.cab-fondo {
     background-color: #b6b6b6;
     width: 100%;
     height: 50px;
-    
     text-align: center;
     justify-self: center;
+}
+
+.cab-fondo::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .sep {
@@ -20,10 +25,11 @@
     height: 75%;
 }
 
-p{
+p {
     font-size: 25px;
     margin-top: 10px;
 }
+
 
 /* Nombre de la pagina */
 
@@ -35,10 +41,11 @@ p{
     float: left;
 }
 
-img.foto{
+img.foto {
     width: 40px;
     height: 40px;
 }
+
 
 /* Parte del carrito */
 
@@ -80,7 +87,8 @@ img.foto{
     cursor: pointer;
 }
 
-a, a:visited{
+a,
+a:visited {
     font-style: unset;
     color: #222;
 }
