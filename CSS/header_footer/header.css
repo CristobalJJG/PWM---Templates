@@ -1,6 +1,6 @@
 /* background */
 
-.c-fondo {
+.cab-fondo {
     background-color: #b6b6b6;
     width: 100%;
     height: 50px;
@@ -8,7 +8,7 @@
     justify-self: center;
 }
 
-.c-fondo::after {
+.cab-fondo::after {
     content: "";
     display: block;
     clear: both;

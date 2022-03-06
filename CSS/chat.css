@@ -12,55 +12,76 @@ body {
 
 .chatCont {
     display: flex;
+    flex-direction: column;
     height: 95vh;
     background-color: #aaa;
 }
 
 .chats {
     position: relative;
-    width: 50%;
     height: calc(100% - 100px);
     background-color: #888;
-    margin: 10px;
+    margin: 10px 50px;
     border-radius: 10px;
     margin-right: 5%;
-    overflow-y: scroll;
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
+}
+
+.cont-izq {
+    width: 25%;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: flex-start;
-    align-items: center;
+    list-style: none;
 }
 
 .s-chat {
-    width: 80%;
-    height: 30px;
-    background-color: #fff;
-    border: 2px solid #222;
-    margin-bottom: 50px;
+    position: relative;
+    width: 85%;
+    height: 70px;
+    border: 1px solid #555;
+    margin: 10px 5% 0;
+    background-color: #aaa;
 }
 
 .c-fondo {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #aaa;
 }
 
-#nombre #nombre {
+.s-chat:hover,
+.c-fondo:hover {
+    background-color: #999;
+}
+
+#nombre #nombre,
+#ultimoMensaje #ultimoMensaje {
     font-size: large;
+    padding: 0;
+    margin: 0;
 }
 
 #ultimoMensaje #ultimoMensaje {
-    font-size: large;
+    font-size: medium;
 }
 
 .box {
     position: relative;
-    width: 50%;
+    width: 75%;
     margin: 10px;
-    height: calc(100% - 100px);
-    background-color: #c4c4c4;
+    height: 95%;
+    background-color: #aaa;
     border-radius: 10px;
+    overflow-y: scroll;
 }
 
 .item {
@@ -79,12 +100,19 @@ body {
 .message {
     margin: 0 10px;
     background-color: #eee;
-    border-radius: 10px;
     display: flex;
     min-height: 25px;
     padding: 9px 10px;
     align-items: center;
     color: #222121;
+}
+
+.msg-izq {
+    border-radius: 10px 10px 10px 2px;
+}
+
+.msg-der {
+    border-radius: 10px 10px 2px 10px;
 }
 
 .img-der,
@@ -118,6 +146,7 @@ body {
     flex: 1;
     border: 1px solid #aaa;
     padding: 2px;
+    padding-left: 10px;
     border-radius: 5px;
 }
 
@@ -129,4 +158,8 @@ body {
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
+}
+
+.cent {
+    text-align: center;
 }
