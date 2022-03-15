@@ -74,3 +74,17 @@ body {
 .cent {
     text-align: center;
 }
+
+@media screen and (max-width:960px) {
+    .imagen {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .imagen {
+        width: 120px;
+        height: 160px;
+    }
+}

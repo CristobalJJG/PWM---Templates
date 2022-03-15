@@ -25,6 +25,9 @@ body {
     background-color: #d9d8d8;
     border: 1 solid #222;
     border-radius: 10px;
+}
+
+.scroll {
     overflow-y: scroll;
 }
 
@@ -89,9 +92,11 @@ p.desc {
     margin: 0;
     background-color: #aaa;
     padding: 5px;
+    max-height: 100px;
     height: 100%;
     width: 100%;
     text-align: justify;
+    overflow: hidden;
 }
 
 p.nObj {
@@ -112,4 +117,46 @@ div.r-full {
     margin: 25px;
     width: 90%;
     height: auto;
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .f-gris {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .recuadro {
+        width: 80%;
+        height: 75%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .f-gris {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .recuadro {
+        width: 80%;
+        height: 75%;
+    }
+    p.desc {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .f-gris {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .recuadro {
+        width: 80%;
+        height: 75%;
+    }
+    p.desc {
+        font-size: medium;
+    }
 }

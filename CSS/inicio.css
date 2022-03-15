@@ -39,12 +39,11 @@ input[type="submit"].btn {
     font-size: 55px;
     color: rgb(240, 240, 240);
     border: 0px;
-    transition: ease 50ms;
+    transition: 200ms;
 }
 
 input[type="submit"].btn:hover {
-    width: 300px;
-    height: 100px;
+    transform: scale(1.1);
     border: 20px, solid, #BA8D96;
     color: #BA8D96;
     background: #FFFFFF;
@@ -85,4 +84,20 @@ input[type="password"]:hover,
 select:hover {
     background-color: #aaa;
     color: #eee;
+}
+
+@media screen and (max-width:960px) {
+    input[type="submit"].btn {
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    input[type="submit"].btn {
+        width: 140px;
+        height: 40px;
+        font-size: 24px;
+    }
 }

@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href="/CSS/header_footer/header_perfil.css">
-    <link rel="stylesheet" href="/CSS/header_footer/header.css">
-</head>
 <header>
     <div class="cab-fondo">
         <!--Nombre de la tienda-->
@@ -11,7 +7,7 @@
         <div class="izq full">
             <ul class="cabecera">
                 <li><a href="/web/PerfilUsuario/Inicio.html">Perfil</a></li>
-                <li><a href="/web/PerfilUsuario/Compras.html">Compras</a></li>
+                <li class="choosen"><a href="/web/PerfilUsuario/Compras.html">Compras</a></li>
                 <li><a href="/web/PerfilUsuario/Ventas.html">Vender</a></li>
             </ul>
         </div>
@@ -19,7 +15,7 @@
         <div>
             <a href="/web/PerfilUsuario/Inicio.html">
                 <div class="cuadro">
-                    <img src="/img/Logos/Usuario.png" id="foto-u" height="25" width="25">
+                    <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
                 </div>
                 <div>
                     <p id="nombreUser" class="userName">Nombre de usuario</p>
@@ -33,10 +29,19 @@
         <div>
             <a href="/web/Compra/Cesta/cesta.html">
                 <div class="cuadro">
-                    <img src="/img/Logos/carrito.jpg" class="foto-c" height="25" width="25">
+                    <img src="/img/Logos/carrito.jpg" class="foto-c  foto">
                 </div>
                 <div>
-                    <p class="c-nombre">Carrito</p>
+                </div>
+            </a>
+        </div>
+        <!--Separación-->
+        <sep class="sep"></sep>
+        <!--Favoritos-->
+        <div>
+            <a href="\web\Compra\favsCompra.html">
+                <div class="cuadro">
+                    <img src="/img/Logos/fav0.png" class="foto-c  foto">
                 </div>
             </a>
         </div>
