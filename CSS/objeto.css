@@ -18,6 +18,7 @@ img.img {
     height: 650px;
     margin: 25px;
     padding-left: 25px;
+    box-shadow: 5px 5px 5px #00000025;
 }
 
 textarea {

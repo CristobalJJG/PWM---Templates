@@ -116,11 +116,14 @@
         </div>
     </div>
 
-    <footer>
-        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
-            <br/> Copyrigth@Aitana&Cristóbal
-            <br/> Esta página web está aprobadisima.</p>
-    </footer>
+    <footer id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('#footer').load("../CódigoReutilizable/footer.html");
+        });
+    </script>
 </body>
 
 </html>

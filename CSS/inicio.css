@@ -57,6 +57,13 @@ input[type="submit"].btn:hover {
     float: right;
 }
 
+.izq::after,
+.der::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .cent {
     text-align: center;
 }

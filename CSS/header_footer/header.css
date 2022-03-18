@@ -7,6 +7,10 @@
         text-align: center;
         justify-self: center;
     }
+
+    .cabecera{
+        margin: 0;
+    }
     
     .cab-fondo::after,
     .nombre::after,

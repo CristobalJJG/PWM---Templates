@@ -10,46 +10,7 @@
 <!--Insertar cabecera-->
 
 <body>
-    <header>
-        <div class="cab-fondo">
-            <!--Nombre de la tienda-->
-            <div class="nombre">
-                <p>Nombre</p>
-            </div>
-
-            <!--Parte del usuario-->
-            <div>
-                <a href="/web/PerfilUsuario/Inicio.html">
-                    <div class="box">
-                        <img src="/img/Logos/Usuario.png" id="foto-u" class="foto">
-                    </div>
-                    <div class="box">
-                        <p id="nombreUser" class="userName">Nombre de usuario</p>
-                    </div>
-                </a>
-            </div>
-            <!--Separación-->
-            <sep class="sep"></sep>
-            <!--Favoritos-->
-            <div>
-                <a href="\web\Compra\favsCompra.html">
-                    <div class="cuadro">
-                        <img src="/img/Logos/fav0.png" class="foto-c  foto">
-                    </div>
-                </a>
-            </div>
-            <!--Separación-->
-            <sep class="sep"></sep>
-            <!--Favoritos-->
-            <div>
-                <a href="/web/Compra/Cesta/cesta.html">
-                    <div class="cuadro">
-                        <img src="/img/Logos/chat.png" class="foto-c  foto">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
     <div class="padre">
         <template>
             <div class="imagen">
@@ -239,11 +200,15 @@
         </div>
     </div>
 
-    <footer style="position: inherit;">
-        <p id="footer" name="footer">Página web desarrollada por Aitana y Cristóbal
-            <br/> Copyrigth@Aitana&Cristóbal
-            <br/> Esta página web está aprobadisima.</p>
-    </footer>
+    <footer style="position:inherit" id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('#header').load("/web/CódigoReutilizable/header_compra.html");
+            $('#footer').load("/web/CódigoReutilizable/footer.html");
+        });
+    </script>
 </body>
 
 </html>

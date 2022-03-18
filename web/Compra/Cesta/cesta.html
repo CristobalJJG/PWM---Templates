@@ -5,6 +5,7 @@
     <title>Cesta</title>
     <link rel="stylesheet" href="/CSS/catalogo.css">
     <link rel="stylesheet" href="/CSS/cesta/cesta.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
 </head>
 
 <body>
@@ -41,4 +42,13 @@
         <div>Costo total</div>
         <p id="costoTotal">50€</p>
     </div>
+
+    <footer id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('#footer').load("/web/CódigoReutilizable/footer.html");
+        });
+    </script>
 </body>
