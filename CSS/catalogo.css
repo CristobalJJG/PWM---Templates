@@ -81,6 +81,10 @@ div.content p#desc{
    font-size: 18px;
 }
 
+h2{
+    font-size: 15px
+}
+
 @media screen and (max-width:960px) {
     .imagen {
         width: 150px;
