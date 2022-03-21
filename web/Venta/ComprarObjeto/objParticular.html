@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title id="ObjName">Nombre del objeto</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/objeto.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="med">
+        <!--Div imagen-->
+        <div class="izq">
+            <img src="/img/catalogo/img_prueba.webp" class="img" id="idImg1" width="450" height="600" />
+        </div>
+
+        <!--Div información-->
+        <div class="der recuadro grid">
+            <!--Nombres e ids-->
+            <div class="izq">
+                <div>
+                    <p id="objName">Nombre del objeto</p>
+                </div>
+                <div>
+                    <h3 id="precio">50€</h3>
+                </div>
+                <div>
+                    <p id="propietario">Cristóbal José Jiménez Gómez</p>
+                </div>
+            </div>
+            <br/>
+            <!--Descripción del artículo-->
+            <div>
+                <div name="descripcion" class="curv" id="desc" cols="102" rows="8">
+                    Descripción del artículo
+                </div>
+            </div>
+
+            <!--Tallas y fav-->
+            <div>
+                <label for="userUbicacion">Ubicación</label>
+                <div id="userUbicacion" class="curv">
+                    mapa
+                </div>
+            </div>
+            <br/>
+            <!--Añadir al carrito con las opciones seleccionadas-->
+            <div class="flex">
+                <input type="button" id="addCarrito" onclick="addCarrito" value="Añadir al carrito">
+                <br/><br/>
+                <button id="addFavourite" onclick="addFavourite">
+                    <p class="fav"><3</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer style="position:inherit" id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $('#header').load("/web/CódigoReutilizable/header_compra.html");
+            $('#footer').load("/web/CódigoReutilizable/footer.html");
+        });
+    </script>
+</body>
+
+
+</html>

@@ -12,14 +12,17 @@ body {
     position: absolute;
     width: 600px;
     height: 600px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin: -300px 0 0 -300px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px #444;
 }
 
 .cabecera {
     background-color: #c4c4c4;
     padding: 2px 0 2px 20px;
+    border-radius: 5px;
     margin: 0;
 }
 
@@ -57,7 +60,8 @@ ul {
     background-color: #222;
     float: right;
     width: 60%;
-    height: calc(100% - 58px);
+    border-radius: 0 0 5px 0;
+    height: calc(100% - 104px);
 }
 
 .t-mapa {
@@ -97,16 +101,17 @@ ul {
 
 .fecha {
     background-color: #555;
-    position:absolute;
+    position: absolute;
     width: 80%;
     left: 10%;
     height: 60%;
     margin-top: 40px;
 }
 
-.bot{
-    margin-top:80%;
+.bot {
+    margin-top: 80%;
 }
+
 
 /* Métodos de pago */
 
@@ -124,4 +129,34 @@ ul {
 
 .pago:hover {
     background-color: #999;
+}
+
+#costoTotal {
+    margin: 0;
+}
+
+@media screen and (max-width:750px) {
+    body {
+        overflow: hidden;
+    }
+    .recuadro {
+        width: 80%;
+        left: 0;
+        top: 0;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .carrito {
+        margin-top: 20px;
+    }
+    .top-l {
+        margin-top: 25%;
+    }
+    .costo {
+        width: 95%;
+    }
 }

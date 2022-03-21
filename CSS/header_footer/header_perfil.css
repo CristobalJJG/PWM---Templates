@@ -4,6 +4,7 @@
     position: relative;
     padding: 0;
     margin: 7px 0 0 0px;
+    font-size: medium;
     right: 5px;
     float: right;
     cursor: pointer;
@@ -17,38 +18,91 @@
     cursor: pointer;
 }
 
-a, a:visited{
+a,
+a:visited {
     font-style: unset;
     color: #222;
 }
 
 
 /* Links de la parte del perfil*/
-ul.cabecera, .full{
+
+ul.cabecera,
+.full {
     height: 100%;
 }
 
-ul.cabecera{
-    left: 25px;
+ul.cabecera {
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
-li{
-    padding:16px 25px 0 25px;
+li {
+    padding: 15px 20px 0 20px;
     list-style: none;
     transition: 200ms;
 }
 
-li a{
+li a {
     font-size: large;
     text-decoration: none;
     transition: 200ms;
 }
 
-li:hover, a:hover, li.choosen{
+li:hover,
+a:hover,
+li.choosen {
     background-color: #aaa;
     color: #000;
     border-radius: 10px;
 }
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .cab-fondo {
+        height: 45px;
+    }
+    img.foto {
+        width: 30px;
+        height: 30px;
+    }
+    .userName {
+        display: none;
+    }
+    .nombre {
+        width: 100px;
+    }
+    .nombre p {
+        margin: 0;
+        padding-top: 5px;
+    }
+    li {
+        padding: 7px 15px 0 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cab-fondo {
+        height: 40px;
+    }
+    .userName {
+        font-size: 15px;
+        width: 150px;
+    }
+    .userName {
+        display: none;
+    }
+    .nombre {
+        width: 80px;
+    }
+    .nombre p {
+        padding-top: 2px;
+        font-size: 20px;
+    }
+    .sep {
+        right: 0px;
+    }
+    li {
+        padding: 5px 10px 0 10px;
+    }
+}

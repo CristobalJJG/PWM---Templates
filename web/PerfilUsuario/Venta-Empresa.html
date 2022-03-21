@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>Introducir una venta</title>
-    
+
     <link rel="stylesheet" href="/CSS/inicio.css">
     <link rel="stylesheet" href="/CSS/header_footer/header.css">
     <link rel="stylesheet" href="/CSS/header_footer/header_perfil.css">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="/CSS/perfil/perfil.css">
     <link rel="stylesheet" href="/CSS/perfil/venta.css">
 </head>
+
 <body>
     <!--Fondo gris-->
     <div class="f-gris top-v v-pad">
@@ -21,20 +23,20 @@
             </div>
 
             <div class="full">
-                <div class="full">
+                <div class="full grid">
                     <label for="descripcion">Descripción</label>
                     <textarea name="descripcion" id="descripcion"></textarea>
                 </div>
-                <div class="full h50">
+                <div class="full grid">
                     <p>¿A qué ubicaciones llegaría?</p>
                     <form action="addUbicación">
-                        <div class="cent izq">
-                            <label for="ubicacion">Ubicación</label><br/>
-                            <input type="text" id="ubi"/><br/>
+                        <div class=" izq ubs grid cent">
+                            <label for="ubicacion">Ubicación</label>
+                            <input type="text" id="ubi" />
                             <input type="submit" value="Añadir">
                         </div>
                     </form>
-                    <div id="listaUbis" class="cent der">
+                    <div id="listaUbis" class="cent der h-250">
                         <label for="ubisTotal">Ubicaciones</label>
                         <ul id="ubisTotal">
                             <li class="ubi">CC La Ballena - Las Palmas de GC</li>
@@ -42,9 +44,9 @@
                         </ul>
                     </div>
                 </div>
-            </div><br/>
+            </div>
             <div class="full">
-                <div class="line izq">
+                <div class="line izq w-100">
                     <label for="costo">Costo</label><input type="number" id="costo">
                     <label for="Más datos">Más datos</label><input type="text" id="Más datos">
                     <label for="Más datos">Más datos</label><input type="text" id="Más datos2">
@@ -56,7 +58,7 @@
                         <option value="4">Categoría 4</option>
                     </select>
                 </div>
-                <div class="der">
+                <div class="der w-100 m-top">
                     <form action="addPicture">
                         <input type="file" name="objImage" id="objImage">
                         <!--quiero que se entienda que no es estático, a medida que se vayan añadiendo imágenes
@@ -68,13 +70,14 @@
                             <div><img src="/img/Logos/def-photo.png" class="image"></div>
                             <div><img src="/img/Logos/def-photo.png" class="image"></div>
                         </div>
-                    </form>    
+                    </form>
                 </div>
             </div>
             <div class="cent">
-                <input type="submit" name="addObject" id="addObject"/>
+                <input type="submit" name="addObject" id="addObject" />
             </div>
         </form>
     </div>
 </body>
+
 </html>

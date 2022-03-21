@@ -1,4 +1,11 @@
 PWM---Templates
 Como se entrega:
-    Aitana 44.2.powerpoint
-    Aitana 44.2.
+    44.2.powerpoint
+
+Cosas a añadir en el ppx
+  Añadir trello
+  Cambios del css
+  Cómo se estructuran los datos
+
+Faltaría añadir diseño responsivo a:
+    - chat

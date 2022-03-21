@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="/CSS/catalogo.css">
+    <link rel="stylesheet" href="/CSS/header_footer/header.css">
+    <link rel="stylesheet" href="/CSS/header_footer/footer.css">
+</head>
+<!--Insertar cabecera-->
+<body>
+    <div id="header"></div>
+    <div class="padre" id="productos">
+        
+        <!--Template de como deberían se formatean las fotos-->
+        <!--
+        <div class="imagen">
+            <a href="/web/Compra/ComprarObjeto/objEmpresa.html">
+                <img src="/img/catalogo/Img_pruebas1.jpg" id="idImg1" />
+                <div class="content">
+                    <h2>Objeto</h2>
+                    <p>Bonita chaqueta de jugador de rugby, anchita y tal...</p>
+                    <p id="precio">35€</p>
+                </div>
+            </a>
+        </div>
+        -->
+    </div>
+
+    <footer style="position:inherit" id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('#header').load("/web/CódigoReutilizable/header_compra.html");
+            $('#footer').load("/web/CódigoReutilizable/footer.html");
+        });
+        console.log("Header y Footer ponidos");
+    </script>
+    <script src="/scripts/cargarProductos.js">
+        window.onload = function(){
+        console.log("Esta parte ocurre");
+        loadProduct();
+        console.log("Se ejecuta");
+        
+    }</script>
+</body>
+
+</html>
+<!--Insertar pie de página-->

@@ -10,50 +10,48 @@
 
 <body>
     <!--Fondo y backgroun-->
-    <div class="fondo">
-        <div class="foto-manos">
-
-            <!--Cuadrado general-->
-            <div class="recuadro">
-                <!--Cuadrardo inicio sesion-->
+    <div class="recuadro">
+        <div>
+            <!--cabecera Inicio sesion-->
+            <div class="recuadro-login w100 h50 izq">
                 <div>
-                    <!--cabecera Inicio sesion-->
-                    <div class="recuadro-login w100 h50 izq">
+                    <h3 class="cent shadow"> INICIA SESIÓN </h3>
+                </div>
+                <div class="cent">
+                    <!--<form action="signIn">-->
+                    <form action="/web/Venta/categoriasVenta.html">
+                        <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                        <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+                        <!--Botón para acceder-->
                         <div>
-                            <h3 class="cent shadow"> INICIA SESIÓN </h3>
+                            <input type="submit" id="btnEnter" value="Enviar" />
                         </div>
-                        <div class="cent">
-                            <form action="signIn">
-                                <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
-                                <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
-                            </form>
-                            <!--Botón para acceder-->
-                            <div>
-                                <input type="submit" id="btnEnter" value="Enviar" />
-                            </div>
-                        </div>
-
-
-                        <!--Cuadro registrarse-->
-                        <div class="recuadro-signin w100 h50 cent">
-                            <!--cabecera Registro-->
-                            <div>
-                                <h3 class="cent">REGISTRARSE</h3>
-                            </div>
-                            <form action="signIn">
-                                <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
-                                <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
-                            </form>
-                            <!--Botón para acceder-->
-                            <div class="cent">
-                                <input type="submit" id="btnEnter" value="Enviar" />
-                            </div>
-                        </div>
-                    </div>
-
+                    </form>
 
                 </div>
             </div>
+
+            <!--Cuadro registrarse-->
+            <div class="recuadro-signin w100 h50 cent">
+                <!--cabecera Registro-->
+                <div>
+                    <h3 class="cent">REGISTRARSE</h3>
+                </div>
+                <form action="signIn">
+                    <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                    <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+                    <!--Botón para acceder-->
+                    <div class="cent">
+                        <input type="submit" id="btnEnter" value="Enviar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="der img-pos">
+        <img src="/img/Logos/b2c7de1951d5d57e9305c96ca875e170-bolsas-de-compra.png">
+    </div>
 </body>
 
 </html>
