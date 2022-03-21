@@ -11,7 +11,7 @@
 
 <body>
     <div id="header"></div>
-    <div>
+    <div class="med">
         <!--Div imagen-->
         <div class="izq">
             <img src="/img/Objeto/Img_pruebas1.jpg" class="img" id="mainImg" />
@@ -68,10 +68,6 @@
                         <option value="l">L</option>
                         <option value="xl">XL</option>
                     </select>
-                    <!--Guía de tallas pretende ser otra API
-                    <div>
-                        <a href="">Guia de tallas</a>
-                    </div>-->
                 </div>
 
                 <!--Añadir al carrito con las opciones seleccionadas-->
@@ -86,10 +82,10 @@
         </div>
     </div>
     <footer style="position:inherit" id="footer"></footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $('#header').load("/web/CódigoReutilizable/header_compra.html");
             $('#footer').load("/web/CódigoReutilizable/footer.html");
         });

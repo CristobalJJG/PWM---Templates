@@ -1,15 +1,11 @@
 PWM---Templates
 Como se entrega:
-    Aitana 44.2.powerpoint
-    Aitana 44.2.
+    44.2.powerpoint
 
+Cosas a añadir en el ppx
+  Añadir trello
+  Cambios del css
+  Cómo se estructuran los datos
 
 Faltaría añadir diseño responsivo a:
-    - objEmpresa
-    - objParticular
-    - Cosas de la cesta:
-      - Cesta
-      - op1
-      - op2
-      - método de pago
-    - log_inSing_in
+    - chat

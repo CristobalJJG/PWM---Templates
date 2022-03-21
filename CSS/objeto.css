@@ -4,12 +4,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.med {
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
 img.img {
     margin: 25px 125px;
     border-radius: 10px;
     width: 450px;
     height: 600px;
     box-shadow: 5px 5px 5px #00000025;
+    transition: all 0.2s;
 }
 
 .recuadro {
@@ -18,11 +25,27 @@ img.img {
     height: 650px;
     margin: 25px;
     padding-left: 25px;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px #00000025;
+    transition: all 0.2s;
 }
 
-textarea {
+.curv {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#desc {
     font-family: Roboto, sans-serif;
+    width: 90%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+#userUbicacion {
+    width: 90%;
+    height: 150px;
+    background-color: grey;
 }
 
 #objName {
@@ -47,6 +70,7 @@ textarea {
     margin-right: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .opcion:hover {
@@ -55,6 +79,11 @@ textarea {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.fill {
+    width: 80%;
 }
 
 button {
@@ -70,6 +99,7 @@ button {
     padding: 0;
     transition: 200ms;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 button .fav {
@@ -97,4 +127,69 @@ button .fav:hover {
 select {
     width: 140px;
     margin: 5px 0 20px 0;
+}
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width:800px) and (max-width:1300px) {
+    #desc {
+        width: 80%;
+    }
+    #userUbicacion {
+        width: 80%;
+    }
+    li a {
+        font-size: 25px;
+    }
+    li {
+        margin-top: 5px;
+    }
+    .l-pad {
+        padding: 5px 5px 0 2px;
+    }
+    .recuadro {
+        width: 80%;
+    }
+    .fondo {
+        left: -50%;
+    }
+    .fondo img {
+        width: 1920px;
+        height: 1080px;
+    }
+    img.img {
+        margin: 50px 25px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .med {
+        display: grid;
+        justify-items: center;
+    }
+    li a {
+        font-size: 20px;
+    }
+    .recuadro {
+        width: 80%;
+        margin-left: 5%;
+    }
+    .fondo {
+        left: -100%;
+    }
+    .fondo img {
+        width: 1920px;
+        height: 1080px;
+    }
+    img.img {
+        margin: 50px 15px;
+    }
+    #desc {
+        width: 80%;
+    }
+    #userUbicacion {
+        width: 80%;
+    }
 }

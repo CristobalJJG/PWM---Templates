@@ -1,5 +1,5 @@
-const loadProduct = async function(){
-    await $.getJSON("/data/objetosEmpresa.json", function(json){
+const loadProduct = async function() {
+    await $.getJSON("/data/objetosEmpresa.json", function(json) {
         Object.entries(json.Productos).forEach((entry) => {
             const [key, p] = entry;
             console.log(p);
@@ -11,16 +11,16 @@ const loadProduct = async function(){
             const h2 = document.createElement('h2');
             const p1 = document.createElement('p');
             const p2 = document.createElement('p');
-    
+
             div.setAttribute('class', 'imagen');
-                a.setAttribute('href', "/web/Compra/ComprarObjeto/objEmpresa.html?id="+p.id);
-                img.setAttribute('href', p.mainPhoto);
-                div2.setAttribute('class', 'content');
-                    h2.textContent = p.nombre;
-                    p1.textContent = p.descripcion;
-                    p2.setAttribute('id', p.id)
-                    p2.textContent = p.precio;
-    
+            a.setAttribute('href', "/web/Compra/ComprarObjeto/objEmpresa.html?id=" + p.id);
+            img.setAttribute('src', p.mainPhoto);
+            div2.setAttribute('class', 'content');
+            h2.textContent = p.nombre;
+            p1.textContent = p.descripcion;
+            p2.setAttribute('id', p.id)
+            p2.textContent = p.precio;
+
             div.appendChild(a);
             a.appendChild(img);
             a.appendChild(div2);
@@ -31,6 +31,6 @@ const loadProduct = async function(){
             sec.appendChild(div);
         })
     })
-} 
+}
 
 loadProduct();
