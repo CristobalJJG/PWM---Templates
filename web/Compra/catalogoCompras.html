@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="/CSS/header_footer/footer.css">
 </head>
 <!--Insertar cabecera-->
+
 <body>
     <div id="header"></div>
     <div class="padre" id="productos">
-        
+
         <!--Template de como deberían se formatean las fotos-->
         <!--
         <div class="imagen">
@@ -31,20 +32,20 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $('#header').load("/web/CódigoReutilizable/header_compra.html");
             $('#footer').load("/web/CódigoReutilizable/footer.html");
         });
         console.log("Header y Footer ponidos");
     </script>
-    <script src="/scripts/cargarProductos.js">
-        window.onload = function(){
-        console.log("Esta parte ocurre");
-        loadProduct();
-        console.log("Se ejecuta");
-        
-    }</script>
+    <script src="/scripts/Antiguo/cargarProductos.js">
+        window.onload = function() {
+            console.log("Esta parte ocurre");
+            loadProduct();
+            console.log("Se ejecuta");
+
+        }
+    </script>
 </body>
 
 </html>
-<!--Insertar pie de página-->
