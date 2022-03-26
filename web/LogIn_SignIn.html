@@ -20,11 +20,11 @@
                 <div class="cent">
                     <!--<form action="signIn">-->
                     <form action="/web/Venta/categoriasVenta.html">
-                        <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
-                        <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+                        <input type="text" class="txtsin" id="LoginEmail" placeholder="Dirección de e-mail" required/>
+                        <input type="password" class="txtsin" id="LoginPass" placeholder="Contraseña" required/>
                         <!--Botón para acceder-->
                         <div>
-                            <input type="submit" id="btnEnter" value="Enviar" />
+                            <input type="submit" id="btnLogin" value="Enviar" />
                         </div>
                     </form>
 
@@ -37,18 +37,20 @@
                 <div>
                     <h3 class="cent">REGISTRARSE</h3>
                 </div>
-                <form action="signIn">
+                <form>
                     <input type="text" class="txtsin" id="signInEmail" placeholder="Dirección de e-mail" required/>
+                    <input type="text" class="txtsin" id="nombre" placeholder="Nombre" required/>
                     <input type="password" class="txtsin" id="signInPass" placeholder="Contraseña" required/>
+
                     <!--Botón para acceder-->
                     <div class="cent">
-                        <input type="submit" id="btnEnter" value="Enviar" />
+                        <script type="module" src="/scripts/login.js"></script>
+                        <input type="button" id="btnRegister" value="Enviar" />
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
     <div class="der img-pos">
         <img src="/img/Logos/b2c7de1951d5d57e9305c96ca875e170-bolsas-de-compra.png">
     </div>
