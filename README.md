@@ -7,5 +7,4 @@ Cosas a añadir en el ppx
   Cambios del css
   Cómo se estructuran los datos
 
-Faltaría añadir diseño responsivo a:
-    - chat
+Para el diseño responsivo se añadió una extensión "@media screen and (max-width:600px), @media screen and (min-width:600px) and (max-width:800px)" a cada css de forma que cambie la estrucura de la página para que quede estéticamente bien

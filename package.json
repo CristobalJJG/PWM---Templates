@@ -1,0 +1,11 @@
+{
+    "name": "PMW---Templates",
+    "description": "",
+    "main": "/index.html",
+    "scripts": {
+        "user-server": "json-server -w ./data/usuarios.json -w --port 5001"
+    },
+    "dependencies": {
+        "json-server": "^0.17.0"
+    }
+}

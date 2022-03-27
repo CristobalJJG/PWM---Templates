@@ -14,18 +14,19 @@
 </head>
 
 <body>
+    <script src="../../scripts/addObjetoVenta.js"></script>
     <!--Fondo gris-->
     <div class="f-gris top-v v-pad">
-        <form action="addObjeto">
+        <form id="formularioGen" action="addObjectVenta()" method="post">
             <div class="line">
                 <label for="objNombre">Nombre del objeto</label>
-                <input type="text" id="objNombre" placeholder="Maceta">
+                <input type="text" id="objNombre" placeholder="Maceta" required>
             </div>
 
             <div class="full">
                 <div class="izq full">
                     <label for="descripcion">Descripción</label>
-                    <textarea name="descripcion" id="descripcion"></textarea>
+                    <textarea name="descripcion" id="descripcion" required></textarea>
                 </div>
                 <div class="der full h-250">
                     <label for="ubicacion">Ubicación</label>
@@ -36,34 +37,35 @@
             </div><br/>
             <div class="full">
                 <div class="line izq w-100">
-                    <label for="costo">Costo</label><input type="number" id="costo">
+                    <label for="costo">Costo</label><input type="number" id="costo" required>
                     <label for="Más datos">Más datos</label><input type="text" id="Más datos">
                     <label for="Más datos">Más datos</label><input type="text" id="Más datos2">
                     <label for="etiqueta">Etiqueta</label>
                     <select name="etiqueta" id="etiqueta">
-                        <option value="1">Categoría 1</option>
-                        <option value="2">Categoría 2</option>
-                        <option value="3">Categoría 3</option>
-                        <option value="4">Categoría 4</option>
+                        <option value="1">Abrigo</option>
+                        <option value="2">Camisa</option>
+                        <option value="3">Pantalón</option>
+                        <option value="4">Zapatos</option>
                     </select>
                 </div>
+
                 <div class="der w-100 m-top">
                     <form action="addPicture">
-                        <input type="file" name="objImage" id="objImage">
-                        <!--quiero que se entienda que no es estático, a medida que se vayan añadiendo imágenes
-                        Se irán añadiendo a productImages-->
+                        <input type="file" name="objImage" id="objImage" accept="image/*">
+
                         <div class="flex full over" id="productImages">
                             <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <!--<div><img src="/img/Logos/def-photo.png" class="image"></div>
                             <div><img src="/img/Logos/def-photo.png" class="image"></div>
                             <div><img src="/img/Logos/def-photo.png" class="image"></div>
-                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
-                            <div><img src="/img/Logos/def-photo.png" class="image"></div>
+                            <div><img src="/img/Logos/def-photo.png" class="image"></div>-->
                         </div>
                     </form>
                 </div>
+
             </div>
             <div class="cent">
-                <input type="submit" name="addObject" id="addObject" />
+                <input type="submit" name="addObject" id="addObject" action="addObjectVenta()" />
             </div>
         </form>
     </div>
