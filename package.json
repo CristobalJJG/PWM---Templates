@@ -3,7 +3,7 @@
     "description": "",
     "main": "/index.html",
     "scripts": {
-        "server": "json-server --watch ./data/usuarios.json --port 5001"
+        "user-server": "json-server -w ./data/usuarios.json -w --port 5001"
     },
     "dependencies": {
         "json-server": "^0.17.0"
